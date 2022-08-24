@@ -8,7 +8,7 @@ Mi proyecto se basa en un Ecommerce sobre instrumentos musicales. Eleji esta tem
 
 Gif DEMOSTRATIVO
 
-![flujo de app](https://user-images.githubusercontent.com/101369142/184255966-6541b56d-b1a6-4557-aa0e-5dd6ffecfdcd.gif)
+flujo de app(https://github.com/tobycarb/TOBinstrumentosReact/blob/main/TOBinstrumentos-flujoDEapp.gif)
 
 
  Dependencias Utilizadas:
