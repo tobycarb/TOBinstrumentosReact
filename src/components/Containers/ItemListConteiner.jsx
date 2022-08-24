@@ -7,7 +7,7 @@ import {getFirestore, collection, getDocs} from 'firebase/firestore'
 function ItemListConteiner(props) {
 
   const {serie} = useParams();
-  const [funkos , setFunkos] = useState([]);
+  const [instrumentos , setInstrumentos] = useState([]);
   const [loading, setLoading] = useState(false)
   
 
@@ -18,9 +18,9 @@ function ItemListConteiner(props) {
       getDocs(itemsCollection).then((snapshot) => {
         const data = snapshot.docs.map((doc) => doc.data());
         if(serie){
-          setFunkos(data.filter((product) => product.series == serie))
+          setInstrumentos(data.filter((product) => product.series == serie))
         }else{
-          setFunkos(data)
+          setInstrumentos(data)
         }
       })
       .finally(()=> setLoading(false));
@@ -29,7 +29,7 @@ function ItemListConteiner(props) {
 
   return (<>
     { loading ? <Loader/>
-    : <ItemList funkos={funkos}/>}
+    : <ItemList instrumentos={instrumentos}/>}
     </>
   )
 }
